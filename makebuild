@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# delete directories
+make realclean
+cmake .
+make
