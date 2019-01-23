@@ -1,3 +1,7 @@
+# cmake will create top level project for each project command
+# this is useful when you've subprojects that do not make sense as part of main project
+project(cmake-tutorial CXX C Java)
+
 cmake_minimum_required(VERSION 2.8)
 
 set(BUILD_SHARED_LIBS ON)
