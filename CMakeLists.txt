@@ -35,3 +35,7 @@ add_custom_target(realclean
 # you can also specify base path for installation during cmake like this `cmake . -DCMAKE_INSTALL_PREFIX=_install`
 # this will install binaries to ./_install/bin directory
 install(TARGETS Main DESTINATION bin)
+
+# set name based properties
+set_property(DIRECTORY PROPERTY ADDITIONAL_MAKE_CLEAN_FILES
+   "${CMAKE_CURRENT_SOURCE_DIR}/bin")
